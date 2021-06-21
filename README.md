@@ -5,11 +5,11 @@
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/alpine.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/alpine/)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/alpine/latest?logo=docker&style=for-the-badge)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.13.5-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.14.0-green.svg?style=for-the-badge)](https://alpinelinux.org/)
 
 This Docker Image [(linuxcontainers/alpine)](https://hub.docker.com/r/linuxcontainers/alpine/) is based on the minimal [Alpine Linux](https://alpinelinux.org/).
 
-##### Alpine Version 3.13.5 (Released April 14, 2021)
+##### Alpine Version 3.14.0 (Released June 15, 2021)
 
 This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases)
 
