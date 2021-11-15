@@ -11,7 +11,7 @@ This Docker Image [(linuxcontainers/alpine)](https://hub.docker.com/r/linuxconta
 
 ##### Alpine Version 3.13.7 (Released November 12, 2021)
 
-This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases)
+This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://alpinelinux.org/releases/)
 
 ----
 
@@ -36,7 +36,7 @@ Alpine has the following platforms available:
 
 ## Source Repository and Builds
 
-The [source repository](https://github.com/linuxcontainers/alpine) is maintained on GitHub.  The images are built on Github and pushed to [Docker Hub](https://hub.docker.com/r/linuxcontainers/alpine), as well as the [Github Container Registry](https://github.com/linuxcontainers?ecosystem=container&tab=packages) using Github Actions.
+The [source repository](https://github.com/linuxcontainers/alpine) is maintained on GitHub.  The images are built on Github and pushed to [Docker Hub](https://hub.docker.com/r/linuxcontainers/alpine), as well as the [Github Container Registry](https://github.com/orgs/linuxcontainers/packages/container/package/alpine) using Github Actions.
 
 
 ## Docker Tags and Versioning Scheme
