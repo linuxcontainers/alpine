@@ -2,7 +2,7 @@
 
 [![Docker Automated build](https://img.shields.io/docker/automated/linuxcontainers/alpine.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/alpine/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxcontainers/alpine.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/alpine/)
-[![Github Pulls](https://img.shields.io/github/issues-pr/linuxcontainers/alpine?style=for-the-badge&logo=github)]
+![Github Pulls](https://img.shields.io/github/issues-pr/linuxcontainers/alpine?style=for-the-badge&logo=github)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/linuxcontainers/alpine?logo=docker&style=for-the-badge)](https://hub.docker.com/r/linuxcontainers/alpine)
 
 
