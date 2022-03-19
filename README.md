@@ -6,11 +6,11 @@
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/linuxcontainers/alpine?logo=docker&style=for-the-badge)](https://hub.docker.com/r/linuxcontainers/alpine)
 
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.14.4-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.15.1-green.svg?style=for-the-badge)](https://alpinelinux.org/)
 
 This Docker Image [(linuxcontainers/alpine)](https://hub.docker.com/r/linuxcontainers/alpine/) is based on the minimal [Alpine Linux](https://alpinelinux.org/).
 
-##### Alpine Version 3.14.4 (Released November 24, 2021)
+##### Alpine Version 3.15.1 (Released March 16, 2022)
 
 This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://alpinelinux.org/releases/)
 
@@ -44,14 +44,14 @@ The [source repository](https://github.com/linuxcontainers/alpine) is maintained
 
 Each image pushed to Docker Hub and the Github Container Registry is tagged as follows:
 * The tag `latest` indicates, well, the latest image.
-* Tags of the form MAJOR.MINOR.PATCH (such as 3.14.4) indicate the SemVer of 
+* Tags of the form MAJOR.MINOR.PATCH (such as 3.15.1) indicate the SemVer of 
   the __Alpine__ image used as the base.
 * Tags of the form MAJOR.MINOR (e.g., 3.13) correspond to the most recent patch level of
-  the __Alpine__ image used as the base. For example, if 3.14.4 is the latest
+  the __Alpine__ image used as the base. For example, if 3.15.1 is the latest
   release, then 3.13 maps to this as well.
 * Tags of the form MAJOR (e.g., 3) correspond to the most recent patch level of
   the __Alpine__ image used as the base, with major corresponding major version. 
-  For example, if 3.14.4 is the latest release, then 3 maps to this as well.
+  For example, if 3.15.1 is the latest release, then 3 maps to this as well.
 
 [Semantic Versioning](https://semver.org/) uses version numbers of the form: MAJOR.MINOR.PATCH, where differences in MAJOR correspond to incompatible changes, differences in MINOR correspond to introduction of backwards compatible new functionality, and PATCH corresponds to backwards compatible bug fixes.
 
