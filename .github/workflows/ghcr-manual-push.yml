@@ -77,7 +77,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v6,linux/arm/v7
-          labels: org.opencontainers.image.version=${{ steps.prep.outputs.version }}
 
 
 #      - name: Set up Docker Buildx
