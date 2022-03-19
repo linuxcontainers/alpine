@@ -1,4 +1,4 @@
-name: GHCR Manual Push
+name: Docker
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -8,7 +8,13 @@ name: GHCR Manual Push
 on:
   schedule:
     - cron: '32 14 * * *'
+  push:
+    branches: [ main ]
+    # Publish semver tags as releases.
+    tags: [ 'v*.*.*' ]
   workflow_dispatch:
+  pull_request:
+    branches: [ main ]
 
 env:
   # Use docker.io for Docker Hub if empty
