@@ -27,7 +27,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          GHCR_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          GHCR_IMAGE=${{ env.IMAGE_NAME }}
           LATESTTAG=$(git describe --abbrev=0 --tags)
           VERSION=${LATESTTAG#v}
           MINOR=${VERSION%.*}
@@ -53,28 +53,16 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
-          registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
 
-      # Extract metadata (tags, labels) for Docker
-      # https://github.com/docker/metadata-action
-      - name: Extract Docker metadata
-        id: meta
-        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+      - name: Build and push
+        uses: docker/build-push-action@v2
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-
-      # Build and push Docker image with Buildx (don't push on PR)
-      # https://github.com/docker/build-push-action
-      - name: Build and push Docker image
-        id: build-and-push
-        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-        with:
+          builder: ${{ steps.buildx.outputs.name }}
           context: .
-          push: ${{ github.event_name != 'pull_request' }}
           file: ./Dockerfile
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          push: ${{ github.event_name != 'pull_request' }}
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v6,linux/arm/v7
-
+          tags: ${{ steps.prep.outputs.tags }}
+          labels: org.opencontainers.image.version=${{ steps.prep.outputs.version }}
