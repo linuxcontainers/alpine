@@ -30,7 +30,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+       #   images: ${{ secrets.DOCKERHUB_USERNAME }}/alpine
           tags: |
             type=semver,pattern={{version}}
             type=raw,value={{date 'YY.MM.DD'}}
