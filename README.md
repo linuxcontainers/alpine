@@ -10,7 +10,7 @@
 
 This Docker Image [(linuxcontainers/alpine)](https://hub.docker.com/r/linuxcontainers/alpine/) is based on the minimal [Alpine Linux](https://alpinelinux.org/).
 
-##### Alpine Version 3.18.0 (Released Nov 22, 2022)
+##### Alpine Version 3.20.0 (Released May 22, 2024)
 
 This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://alpinelinux.org/releases/)
 
